@@ -46,3 +46,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Build
+# =========================
+_build
+bower_components
+.sass-cache
+node_modules

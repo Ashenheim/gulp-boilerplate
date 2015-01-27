@@ -117,5 +117,5 @@ gulp.task('livereload', function() {
 /*	Bundled tasks
 ------------------------------------ */
 
-gulp.task('default', [ 'html', 'scripts', 'sass', 'move' ]);
-gulp.task('serve',   [ 'html', 'scripts', 'sass', 'move', 'webserver', 'livereload', 'watch' ]);
+gulp.task('default',   [ 'html', 'scripts', 'sass', 'move', 'webserver', 'livereload', 'watch' ]);
+gulp.task('build',     [ 'html', 'scripts', 'sass', 'move' ]);
