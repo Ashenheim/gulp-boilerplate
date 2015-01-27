@@ -1,0 +1,75 @@
+/* ====================================
+	Site typography.
+==================================== */
+
+/*
+	Headings
+	added .alpha, .beta, .gamma, .delta, .epsilon and .zeta for OOCSS reasons.
+	------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.4em;
+}
+
+h1, .alpha {
+	font-size: 2em;
+}
+
+h2, .beta {
+	font-size: 1.8em;
+}
+
+h3, .gamma {
+	font-size: 1.5em;
+}
+
+h4, .delta {
+	font-size: 1.2em;
+}
+
+h5, .epsilon {
+	font-size: 1.1em;
+}
+
+h6, .zeta {
+	font-size: 1.05em;
+}
+
+/*
+	Paragraphs, links and combined
+	------------------------------------ */
+
+p {
+	margin: 0;
+	& + & {
+		margin-top: $base-spacing;
+	}
+}
+
+a {
+	color: $color-link;
+	font-weight: 700;
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		color: $color-link--hover;
+	}
+}
+
+p a {
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	&:hover, &:active, &:focus {
+		border-color: $color-link--hover;
+	}
+}
+
+/*
+	Separate elements
+	------------------------------------ */
+
+hr {
+	border: none;
+	border-bottom: 1px solid $color-accent;
+	width: 100%;
+}

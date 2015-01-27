@@ -1,0 +1,56 @@
+/* ====================================
+   Grid system
+   ==================================== */
+
+
+/*
+	Settings
+	------------------------------------ */
+
+	$grid-columns				: 3;
+	$grid-gutter				: $gutter;
+
+
+
+/*
+	Functions
+	------------------------------------ */
+
+	
+
+
+
+/*
+	Grid Systems
+	------------------------------------ */
+
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
+	@include cf;
+}
+
+.row {
+	margin-left: -#{$grid-gutter};
+	margin-right: -#{$grid-gutter};
+	margin-bottom: $block-padding;
+	@include cf;
+}
+
+.column {
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
+	float: left;
+}
+
+@for $i from 1 through $grid-columns {
+
+	.col-#{$i} {
+		@extend .column;
+		width: ( ( 100% / $grid-columns ) * $i );
+	}
+
+}

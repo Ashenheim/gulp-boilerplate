@@ -1,0 +1,61 @@
+/* ====================================
+	Variables
+==================================== */
+
+
+/*  
+	Layout
+    ------------------------------------ */
+
+$font-family				: 'Titillium Web', $helvetica;
+$font-size					: 16px;
+
+$site-width					: 960px;
+$gutter						: 15px;
+
+$base-spacing				: .4em;
+$block-padding				: 2.4em;
+
+// Media breakpoints
+$bp-huge					: 1140px;
+$bp-large					: 960px;
+$bp-medium					: 780px;
+$bp-small					: 480px;
+
+$easing						: 300ms ease-in-out;
+
+
+
+
+/*  
+	Colors
+    ------------------------------------ */
+
+// Brand
+$color-main					: #EA474B;
+$color-sec					: #cccccc;
+$color-accent				: lighten($color-main,20%);
+
+// Text
+$color-text					: #222;
+$color-link					: $color-main;
+$color-link--hover			: lighten(saturate($color-link, 30%),10%);
+
+// Layout
+$color-background			: #fff;
+$color-background--sec		: lighten(saturate($color-background,5%),15%);
+
+// Generic
+$white						: #ffffff;
+$grey						: #EEEEEE;
+$black						: #000000;
+
+// Third party Brand colors   
+$color-facebook				: #03539e;
+$color-twitter				: #35ccff;
+$color-linkedin				: #217bc1;
+
+
+
+
+
